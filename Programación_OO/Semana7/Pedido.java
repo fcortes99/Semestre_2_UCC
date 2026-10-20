@@ -5,13 +5,13 @@ import java.util.Date;
 
 public class Pedido {
     
-    private Cliente cliente;
+    private ClienteP clienteP;
     private Producto [] producto;
     private Date fecha;
     private int numeroTarjetacredito;
     
-    public Pedido(Cliente cliente, Producto[] producto, Date fecha, int numeroTarjetacredito) {
-        this.cliente = cliente;
+    public Pedido(ClienteP clienteP, Producto[] producto, Date fecha, int numeroTarjetacredito) {
+        this.clienteP = clienteP;
         this.producto = producto;
         this.fecha = fecha;
         this.numeroTarjetacredito = numeroTarjetacredito;
@@ -19,7 +19,7 @@ public class Pedido {
 
     @Override
     public String toString() {
-        return "Pedido [cliente=" + cliente + ", producto=" + Arrays.toString(producto) + ", fecha=" + fecha
+        return "Pedido [cliente=" + clienteP + ", producto=" + Arrays.toString(producto) + ", fecha=" + fecha
                 + ", numeroTarjetacredito=" + numeroTarjetacredito + "]";
     }
 
