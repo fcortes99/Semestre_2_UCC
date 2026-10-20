@@ -23,5 +23,7 @@ public class Pedido {
                 + ", numeroTarjetacredito=" + numeroTarjetacredito + "]";
     }
 
-    
+    public boolean validarTarjeta(){
+        return this.numeroTarjetacredito > 0;
+    }
 }
