@@ -12,7 +12,8 @@ public class ClienteP {
 
     @Override
     public String toString() {
-        return "ClienteP [cedula=" + cedula + ", nombre=" + nombre + "]";
+        return 
+        "ClienteP [cedula=" + cedula + ", nombre=" + nombre + "]";
     }
 
     
