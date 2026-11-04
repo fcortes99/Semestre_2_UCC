@@ -1,20 +1,20 @@
 package Programación_OO.Semana9.EjercicioAsensor;
 
 import java.util.List;
-public class Asensor {
+public class Ascensor {
     
     private int pisoActual;
     private String direccion;
     private Puerta puerta;
     private List<BotonAsensor> botonesInternos;
     
-    public Asensor() {
+    public Ascensor() {
         this.pisoActual = 1;
         this.direccion = "DETENIDO";
         this.puerta = new Puerta();
     }
 
-    public Asensor(int pisoActual) {
+    public Ascensor(int pisoActual) {
         this.pisoActual = pisoActual;
         this.direccion = "DETENIDO";
         this.puerta = new Puerta();
@@ -58,7 +58,7 @@ public class Asensor {
 
         this.pisoActual = pisoDestino;
         this.direccion = "DETENIDO";
-        System.out.println("El ascensor ha llegado a su piso" + this.pisoActual);
+        System.out.println("El ascensor ha llegado a al piso " + this.pisoActual);
 
         this.puerta.abrir();
 
