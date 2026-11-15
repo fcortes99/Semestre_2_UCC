@@ -12,7 +12,8 @@ public class MainAscensor {
                 edificioPisos[i] = new Piso(
                     i + 1, 
                     new BotonPiso(false, false, false, "SUBIR", i + 1),
-                    new BotonPiso(false, false, false, "BAJAR", i + 1)
+                    new BotonPiso(false, false, false, "BAJAR", i + 1),
+                    new PuertasPiso(i + 1)
                 );
 
 
@@ -22,9 +23,9 @@ public class MainAscensor {
 
         control.solicitudPasillo(3, "SUBIDA");
 
-        control.solicitudAscensor(5);
-
         control.ProcesarSolicitudes();
+
+        control.solicitudAscensor(5);
 
         control.ProcesarSolicitudes();
 

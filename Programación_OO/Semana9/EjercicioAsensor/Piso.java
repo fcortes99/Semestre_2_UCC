@@ -5,6 +5,7 @@ public class Piso {
     private int numeroPiso;
     private BotonPiso botonSubir;
     private BotonPiso botonBajar;
+    private PuertasPiso puertasPiso;
     
     public int getNumeroPiso() {
         return numeroPiso;
@@ -18,10 +19,15 @@ public class Piso {
         this.botonBajar = botonBajar;
     }
 
-    public Piso(int numeroPiso, BotonPiso botonSubir, BotonPiso botonBajar) {
+    public PuertasPiso getPuertasPiso() {
+        return puertasPiso;
+    }
+
+    public Piso(int numeroPiso, BotonPiso botonSubir, BotonPiso botonBajar, PuertasPiso puertasPiso) {
         this.numeroPiso = numeroPiso;
         this.botonSubir = botonSubir;
         this.botonBajar = botonBajar;
+        this.puertasPiso = puertasPiso;
     }
 
     @Override

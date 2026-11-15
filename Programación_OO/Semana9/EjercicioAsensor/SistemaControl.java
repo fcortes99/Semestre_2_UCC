@@ -7,11 +7,18 @@ public class SistemaControl {
     private Ascensor asensores;
     private Piso[] pisos;
     private ArrayList<Integer> solicitudesPendientes;
+    private ArrayList<String> historialFallas;
     
     public SistemaControl(Ascensor asensores, Piso[] pisos) {
         this.asensores = asensores;
         this.pisos = pisos;
         this.solicitudesPendientes = new ArrayList<>();
+        this.historialFallas = new ArrayList<>();
+    }
+
+    public void registrarFallas(String descripcionFalla){
+        this.historialFallas.add(descripcionFalla);
+        System.out.println("[ALERTA De SISTEMA] Falla registrada: " + descripcionFalla);
     }
 
     public void solicitudPasillo (int piso, String direccion){
@@ -30,9 +37,11 @@ public class SistemaControl {
         }else{
             int pisoDestino = solicitudesPendientes.get(0);
             asensores.mover(pisoDestino);
+            pisos[pisoDestino - 1].getPuertasPiso().abrir();
             solicitudesPendientes.remove(0);
         }
 
     }
+    
 
 }

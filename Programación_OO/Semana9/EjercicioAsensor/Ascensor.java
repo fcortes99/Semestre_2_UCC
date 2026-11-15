@@ -50,7 +50,7 @@ public class Ascensor {
             System.out.println("El ascensor esta subiendo desde el piso " + this.pisoActual + " hacia el piso " + pisoDestino);
         }else if (pisoDestino < this.pisoActual){
             this.direccion = "BAJANDO";
-            System.out.println("El bajando esta subiendo desde el piso " + this.pisoActual + " hacia el piso " + pisoDestino);
+            System.out.println("El ascensor esta bajando desde el piso " + this.pisoActual + " hacia el piso " + pisoDestino);
         }else {
             System.out.println("El ascensor ya se encuentra en el piso" + this.pisoActual);
             return;
