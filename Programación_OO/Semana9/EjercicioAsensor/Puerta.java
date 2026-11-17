@@ -26,7 +26,7 @@ public class Puerta {
     public void abrir(){
         if (!this.obstaculo){
             this.abierta = true;
-            System.out.println("La puertas de la cabina se han abierto automaticamente. ");
+            System.out.println("La puertas del ascensor se han abierto automaticamente. ");
         } else{
             System.out.println("Obstaculo detectado. No se puede abrir las puertas. ");
         }
@@ -36,7 +36,7 @@ public class Puerta {
     public void cerrar(){
         if (!this.obstaculo){
             this.abierta = false;
-            System.out.println("Las puertas de la cabina se han cerrado automaticamente. ");
+            System.out.println("Las puertas del ascensor se han cerrado automaticamente. ");
         
         } else{
             System.out.println("Obstaculo detectado. No se puede cerrar las puertas. ");
